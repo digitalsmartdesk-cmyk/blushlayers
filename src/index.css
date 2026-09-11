@@ -1,0 +1,57 @@
+:root {
+  --bg: oklch(97% 0.012 350);
+  --surface: oklch(99% 0.005 350);
+  --surface-2: oklch(91% 0.022 350);
+  --border: oklch(90% 0.020 350);
+  --border-strong: oklch(80% 0.020 340);
+  --input-border: oklch(85% 0.020 340);
+  --text: oklch(16% 0.020 340);
+  --text-body: oklch(32% 0.018 340);
+  --text-muted: oklch(44% 0.018 340);
+  --text-muted-2: oklch(40% 0.018 340);
+  --text-faint: oklch(52% 0.015 340);
+  --accent: oklch(38% 0.18 340);
+  --accent-hover: oklch(30% 0.18 340);
+  --lowstock-bg: oklch(94% 0.040 350);
+  --selection: oklch(88% 0.06 340);
+
+  font-family: 'DM Sans', sans-serif;
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--accent-hover);
+}
+
+::selection {
+  background: var(--selection);
+}
+
+button {
+  font-family: inherit;
+}
+
+input {
+  font-family: inherit;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
